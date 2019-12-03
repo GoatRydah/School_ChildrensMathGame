@@ -1,0 +1,31 @@
+﻿<Window x:Class="Assignment5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment5"
+        mc:Ignorable="d"
+        Title="Help Crocky" Height="450" Width="700" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="579*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/back4.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Rectangle Fill="#FFDCB882" HorizontalAlignment="Left" Height="146" Margin="63,107,0,0" Stroke="#FFD67F00" VerticalAlignment="Top" Width="227" Grid.ColumnSpan="2"/>
+        <Button x:Name="NewGameButton" Content="New Game" HorizontalAlignment="Left" Margin="79,217,0,0" VerticalAlignment="Top" Width="75" Click="NewGameButton_Click" Background="#FFE09323" BorderBrush="#FFCD7A00" FontFamily="Kristen ITC" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Left" Margin="66,255,0,0" VerticalAlignment="Top" FontFamily="Kristen ITC" Foreground="Red" FontWeight="Bold" Grid.ColumnSpan="2" Width="224" Height="56"/>
+        <Button x:Name="InfoButton" Content="Set Info" HorizontalAlignment="Left" Margin="79,217,0,0" VerticalAlignment="Top" Width="75" Click="InfoButton_Click" Background="#FFE09323" BorderBrush="#FFCD7A00" FontFamily="Kristen ITC" Grid.Column="1"/>
+        <Label x:Name="WelcomeLabel" Content="Help! Crocky needs to find 10 &#xA;different animals out in the wild&#xD;&#xA;for a class assignment. Can you &#xD;&#xA;help him find them all?" HorizontalAlignment="Left" Margin="218,23,0,0" VerticalAlignment="Top" Foreground="#FFD67F00" FontFamily="Kristen ITC" FontSize="20" Grid.Column="1"/>
+        <Rectangle Fill="#FFE09323" HorizontalAlignment="Left" Height="60" Margin="75,139,0,0" Stroke="#FFD67F00" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="AddRadioButton" Content="Adding" HorizontalAlignment="Left" Margin="82,150,0,0" VerticalAlignment="Top" Checked="AddRadioButton_Checked" FontFamily="Kristen ITC" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="SubtractRadioButton" Content="Subtracting" HorizontalAlignment="Left" Margin="61,150,0,0" VerticalAlignment="Top" Checked="SubtractRadioButton_Checked" FontFamily="Kristen ITC" Grid.Column="1"/>
+        <RadioButton x:Name="MultiplyRadioButton" HorizontalAlignment="Left" Margin="82,175,0,0" VerticalAlignment="Top" Checked="MultiplyRadioButton_Checked" Content="Multiplying" FontFamily="Kristen ITC" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="DivideRadioButton" Content="Dividing" HorizontalAlignment="Left" Margin="61,175,0,0" VerticalAlignment="Top" Checked="DivideRadioButton_Checked" FontFamily="Kristen ITC" Grid.Column="1"/>
+        <Label x:Name="GameTypesLabel" Content="Game Types:" HorizontalAlignment="Left" Margin="74,116,0,0" VerticalAlignment="Top" FontFamily="Kristen ITC" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="388,173,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.54,0.54" Source="/Images/alligator.png" OpacityMask="{x:Null}" Grid.Column="1"/>
+
+    </Grid>
+</Window>
